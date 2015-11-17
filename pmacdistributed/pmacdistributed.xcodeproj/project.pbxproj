@@ -1,0 +1,402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE1E438C1B10C32E00D22CEA /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AED9A32E1B0CED5B00109792 /* libcrypto.dylib */; };
+		AE1E438D1B10C33800D22CEA /* libssl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AED9A3301B0CED6200109792 /* libssl.dylib */; };
+		AE248B431B11F6D3004B2CAA /* client.c in Sources */ = {isa = PBXBuildFile; fileRef = AE4D4EEB1B0B95740057AFA6 /* client.c */; };
+		AE4D4EFB1B0BDF160057AFA6 /* server.c in Sources */ = {isa = PBXBuildFile; fileRef = AE4D4EEC1B0B95740057AFA6 /* server.c */; };
+		AE6569AC1B17A419009FCEC5 /* libssl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AED9A3301B0CED6200109792 /* libssl.dylib */; };
+		AE6569AD1B17A419009FCEC5 /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AED9A32E1B0CED5B00109792 /* libcrypto.dylib */; };
+		AE6569B31B17A428009FCEC5 /* clientcrush.c in Sources */ = {isa = PBXBuildFile; fileRef = AE6569A61B17A3AB009FCEC5 /* clientcrush.c */; };
+		AED9A32F1B0CED5B00109792 /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AED9A32E1B0CED5B00109792 /* libcrypto.dylib */; };
+		AED9A3311B0CED6200109792 /* libssl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AED9A3301B0CED6200109792 /* libssl.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AE4D4EDF1B0B955B0057AFA6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		AE4D4EF41B0B95830057AFA6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		AE6569AE1B17A419009FCEC5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AE4D4EE11B0B955B0057AFA6 /* pmacserver */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = pmacserver; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE4D4EEB1B0B95740057AFA6 /* client.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = client.c; path = ../../client.c; sourceTree = "<group>"; };
+		AE4D4EEC1B0B95740057AFA6 /* server.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = server.c; path = ../../server.c; sourceTree = "<group>"; };
+		AE4D4EF81B0B95830057AFA6 /* pmacdistributed copy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "pmacdistributed copy"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE6569A61B17A3AB009FCEC5 /* clientcrush.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = clientcrush.c; path = ../../clientcrush.c; sourceTree = "<group>"; };
+		AE6569B21B17A419009FCEC5 /* pmsclient copy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "pmsclient copy"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AED9A32E1B0CED5B00109792 /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.dylib; path = usr/lib/libcrypto.dylib; sourceTree = SDKROOT; };
+		AED9A3301B0CED6200109792 /* libssl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libssl.dylib; path = usr/lib/libssl.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE4D4EDE1B0B955B0057AFA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AED9A3311B0CED6200109792 /* libssl.dylib in Frameworks */,
+				AED9A32F1B0CED5B00109792 /* libcrypto.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE4D4EF31B0B95830057AFA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE1E438D1B10C33800D22CEA /* libssl.dylib in Frameworks */,
+				AE1E438C1B10C32E00D22CEA /* libcrypto.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE6569AB1B17A419009FCEC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE6569AC1B17A419009FCEC5 /* libssl.dylib in Frameworks */,
+				AE6569AD1B17A419009FCEC5 /* libcrypto.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE4D4ED81B0B955B0057AFA6 = {
+			isa = PBXGroup;
+			children = (
+				AED9A3301B0CED6200109792 /* libssl.dylib */,
+				AED9A32E1B0CED5B00109792 /* libcrypto.dylib */,
+				AE4D4EE31B0B955B0057AFA6 /* pmacdistributed */,
+				AE4D4EE21B0B955B0057AFA6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE4D4EE21B0B955B0057AFA6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE4D4EE11B0B955B0057AFA6 /* pmacserver */,
+				AE4D4EF81B0B95830057AFA6 /* pmacdistributed copy */,
+				AE6569B21B17A419009FCEC5 /* pmsclient copy */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE4D4EE31B0B955B0057AFA6 /* pmacdistributed */ = {
+			isa = PBXGroup;
+			children = (
+				AE4D4EEB1B0B95740057AFA6 /* client.c */,
+				AE4D4EEC1B0B95740057AFA6 /* server.c */,
+				AE6569A61B17A3AB009FCEC5 /* clientcrush.c */,
+			);
+			path = pmacdistributed;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE4D4EE01B0B955B0057AFA6 /* pmacserver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE4D4EE81B0B955B0057AFA6 /* Build configuration list for PBXNativeTarget "pmacserver" */;
+			buildPhases = (
+				AE4D4EDD1B0B955B0057AFA6 /* Sources */,
+				AE4D4EDE1B0B955B0057AFA6 /* Frameworks */,
+				AE4D4EDF1B0B955B0057AFA6 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pmacserver;
+			productName = pmacdistributed;
+			productReference = AE4D4EE11B0B955B0057AFA6 /* pmacserver */;
+			productType = "com.apple.product-type.tool";
+		};
+		AE4D4EEF1B0B95830057AFA6 /* pmsclient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE4D4EF51B0B95830057AFA6 /* Build configuration list for PBXNativeTarget "pmsclient" */;
+			buildPhases = (
+				AE4D4EF01B0B95830057AFA6 /* Sources */,
+				AE4D4EF31B0B95830057AFA6 /* Frameworks */,
+				AE4D4EF41B0B95830057AFA6 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pmsclient;
+			productName = pmacdistributed;
+			productReference = AE4D4EF81B0B95830057AFA6 /* pmacdistributed copy */;
+			productType = "com.apple.product-type.tool";
+		};
+		AE6569A81B17A419009FCEC5 /* pmclientcrush */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE6569AF1B17A419009FCEC5 /* Build configuration list for PBXNativeTarget "pmclientcrush" */;
+			buildPhases = (
+				AE6569A91B17A419009FCEC5 /* Sources */,
+				AE6569AB1B17A419009FCEC5 /* Frameworks */,
+				AE6569AE1B17A419009FCEC5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pmclientcrush;
+			productName = pmacdistributed;
+			productReference = AE6569B21B17A419009FCEC5 /* pmsclient copy */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE4D4ED91B0B955B0057AFA6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "damiano barone";
+				TargetAttributes = {
+					AE4D4EE01B0B955B0057AFA6 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+				};
+			};
+			buildConfigurationList = AE4D4EDC1B0B955B0057AFA6 /* Build configuration list for PBXProject "pmacdistributed" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AE4D4ED81B0B955B0057AFA6;
+			productRefGroup = AE4D4EE21B0B955B0057AFA6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE4D4EE01B0B955B0057AFA6 /* pmacserver */,
+				AE4D4EEF1B0B95830057AFA6 /* pmsclient */,
+				AE6569A81B17A419009FCEC5 /* pmclientcrush */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE4D4EDD1B0B955B0057AFA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE4D4EFB1B0BDF160057AFA6 /* server.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE4D4EF01B0B95830057AFA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE248B431B11F6D3004B2CAA /* client.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE6569A91B17A419009FCEC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE6569B31B17A428009FCEC5 /* clientcrush.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AE4D4EE61B0B955B0057AFA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AE4D4EE71B0B955B0057AFA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-lcrypto";
+				"OTHER_LDFLAGS[arch=*]" = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AE4D4EE91B0B955B0057AFA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AE4D4EEA1B0B955B0057AFA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AE4D4EF61B0B95830057AFA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "pmacdistributed copy";
+			};
+			name = Debug;
+		};
+		AE4D4EF71B0B95830057AFA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "pmacdistributed copy";
+			};
+			name = Release;
+		};
+		AE6569B01B17A419009FCEC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "pmsclient copy";
+			};
+			name = Debug;
+		};
+		AE6569B11B17A419009FCEC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "pmsclient copy";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE4D4EDC1B0B955B0057AFA6 /* Build configuration list for PBXProject "pmacdistributed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE4D4EE61B0B955B0057AFA6 /* Debug */,
+				AE4D4EE71B0B955B0057AFA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE4D4EE81B0B955B0057AFA6 /* Build configuration list for PBXNativeTarget "pmacserver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE4D4EE91B0B955B0057AFA6 /* Debug */,
+				AE4D4EEA1B0B955B0057AFA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE4D4EF51B0B95830057AFA6 /* Build configuration list for PBXNativeTarget "pmsclient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE4D4EF61B0B95830057AFA6 /* Debug */,
+				AE4D4EF71B0B95830057AFA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE6569AF1B17A419009FCEC5 /* Build configuration list for PBXNativeTarget "pmclientcrush" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE6569B01B17A419009FCEC5 /* Debug */,
+				AE6569B11B17A419009FCEC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE4D4ED91B0B955B0057AFA6 /* Project object */;
+}
